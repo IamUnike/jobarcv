@@ -1,13 +1,659 @@
-body {
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: rgb(247, 243, 243);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+h1, h2, h3, h4, h5{
+  text-transform: capitalize;
+}
+
+button{
+  cursor: pointer;
+}
+
+.nav{
+  background-color: white;
+  color: green;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.nav h3{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: green;
+  padding: 0 1rem;
+}
+
+.nav .ul{
+  padding: 5px;
+}
+
+.nav a{
+  color: green;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav a:hover{
+  text-decoration: underline;
+}
+
+.nav li{
+  list-style-type: none;
+  display: inline;
+  font-size: 14px;
+  padding: 5px 8px;
+  margin: 0 8px;
+}
+
+.home{
+  min-height: 100vh;
+  background-color: white;
+  padding-top: 3rem;
+}
+
+.home-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  background-color: white;
+  width: 90%;
+  min-height: 100%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.main-text{
+  position: relative;
+  z-index: 100;
+}
+
+.mainbg{
+  opacity: .5;
+  position: absolute;
+  top: -30%;
+  left: 90%;
+  width:60px;
+  height:60px ;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.triangle{
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  width: 25px;
+  height: 25px;
+  opacity: .7;
+}
+
+.crown{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -8%;
+  left: -4%;
+}
+
+.main-text h2{
+  background-color: white;
+  z-index: 1000;
+  line-height: 2.7rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: green;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-text p{
+  margin: 1rem 0 1.2rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.main-text .create-btn{
+  border: 1px solid green;
+  outline: none;
+  color: white;
+  background-color: green;
+  font-weight: 600;
+  width: 150px;
+  font-size: 1rem;
+  padding: .7rem .5rem;
+  transition: all .4s ease-in-out;
+  cursor: pointer; 
+}
+
+.main-text .create-btn:hover{
+  background-color: white;
+  color: green;
+}
+
+.main-img{
+  height: 400px;
+  width: 85%;
+  position:relative ;
+  position: relative;
+}
+
+.main-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.img1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  z-index: 1000;
+  scale: 1.1;
+}
+
+.img2{
+  position: absolute;
+  left: 1%;
+  top: -4%;
+  transform: rotate(-25deg);
+  width: 100px;
+  height: 100px;
+}
+
+.img3{
+  position: absolute;
+  right: 2%;
+  top: 0%;
+  transform: rotate(25deg);
+  width: 100px;
+  height: 100px;
+}
+
+.img4{
+  position: absolute;
+  left: -2%;
+  bottom: 0%;
+  transform: rotate(25deg);
+  width: 100px;
+  height: 100px;
+}
+
+.img5{
+  position: absolute;
+  right: 2%;
+  bottom: -2%;
+  transform: rotate(-25deg);
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+.cv{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cv-input{
+  display: block;
+  background-color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cv-output{
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  padding: 0;
+  grid-template-columns: 1fr 2.5fr; 
+  overflow: hidden;
+}
+
+.profile-input h3, .employment-input h3, .education-input h3, .skill-input h3{
+  margin-bottom: .6rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+}
+
+.profile-input input, .employment-input input, .education-input input, .skill-input input{
+  margin-bottom:.8rem ;
+}
+
+input, textarea{
+  padding: .5rem;
+  display: block;
+  width: 100%;
+}
+
+.photo-cont{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.photo-cont .photo-notify{
+  font-size: 13px;
+}
+
+button{
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  padding:.5rem .1rem;
+  width: 100px;
+  margin: 0 1rem;
+  color: white;
+  font-size: 13px;
+}
+
+.addPhotoBtn{
+  border-radius: 5px;
+  padding:.5rem .2rem;
+  width: 100px;
+  text-align: center;
+  background-color:green;
+  color: white;
+  margin: 1rem;
+  font-size: 13px;
+}
+
+.remove{
+  background-color: red;
+}
+
+.add{
+  background-color: green;
+}
+
+.download, .colorInput{
+  border: 2px solid green;
+  border-radius: none;
+  margin: .2rem auto;
+  background-color: transparent;
+  color: black;
+  text-transform: uppercase;
+  padding: .5rem .5rem;
+  border-radius: 0;
+  width:auto;
+  font-size: 12px;
+  border-radius: 7px;
+}
+
+.download{
+  margin: 0 auto 1.3rem;
+  font-weight: 600;
+}
+
+.download:hover{
+  background-color: green;
+  color: white;
+}
+
+.color-btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.colorInput{
+  text-transform: capitalize;
+  font-size: 12px;
+  margin: .4rem auto 0;
+  border: 2px solid green;
+}
+
+.each-input, .each-employment, .each-education{
+  margin-bottom: 1rem;
+}
+
+
+.aside{
+  padding: 2rem 1.5rem;
+  background-color: green;
+  color: white;
+  text-transform: capitalize;
+}
+
+.aside .bio-section{
+  text-align: center;
+}
+
+.aside .image-area{
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1rem;
+}
+
+.aside .image-area img{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.aside section{
+  min-height: 150px;
+}
+
+.aside section, .general section{
+  margin:2rem 0 3rem;
+}
+
+.aside section h3, .general section h3{
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.details-cont{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+
+.details{
+  text-transform: lowercase;
+  font-size: 13px ;
+ }
+
+ .address{
+  text-transform: capitalize;
+ }
+
+ .skills-section div li{
+  margin-bottom: .6rem;
+  font-size: 13px;
+  line-height: 1.3rem;
+  word-wrap:normal;
+ }
+
+
+
+.general{
+  padding: 2.5rem 2rem 2rem 3rem;
+}
+
+.profile-section p{
+  line-height: 1.4rem;
+}
+
+.general section{
+  margin-bottom: 4rem;
+}
+
+.employment-section div, .education-section div{
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.employment-section div:before, .education-section div:before{
+  content: '';
+  position: absolute;
+  border: 1px solid lightgray;
+  left: -3%;
+  height: 100%;
+}
+
+.employment-section div h4, .education-section div h4{
+  font-size: 1rem;
+  margin-bottom: .4rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.employment-section div p, .education-section p{
+  font-size: 15px;
+  margin-bottom: .3rem;
+  text-transform: capitalize;
+}
+
+.employment-section div ul, .education-section div ul{
+  margin: .5rem 0 0 2.5rem;
+}
+
+.employment-section div ul li{ 
+  font-size: 14px;
+  margin-bottom: .3rem;
+}
+
+.employment-section div ul li::first-letter{
+  text-transform: uppercase;
+}
+
+.duration{
+  color: gray;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+
+
+@media only screen and (max-width:760px){
+  .home{
+    padding-top: 3rem;
+  }
+
+  .home-grid{
+    grid-template-columns: 1fr;
+    padding-top: 3rem;
+    grid-gap: 2rem;
+  }
+
+  .main-text{
+    text-align: center;
+    width: 80%;
+  }
+
+  .crown{
+    width: 20px;
+    height: 20px;
+    top: -5%;
+    left: 5%;
+  }
+  
+  .mainbg{
+    top: -10%;
+    left: 90%;
+    width:45px;
+    height:45px ;
+  }
+
+  .triangle{
+    left: 80%;
+    width: 18px;
+    height: 18px;
+  }
+
+  
+  .main-text h2{
+    line-height: 2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .main-text p{
+    font-size: 14px;
+  }
+  
+  .main-text .create-btn{
+    width: 120px;
+    font-size: .9rem;
+    padding: .4rem .3rem;
+  }
+
+.nav{
+  padding: 0.5rem .8rem;
+}
+
+.nav a{
+  padding: 2px;
+}
+
+.nav li{
+  font-size: 13px;
+  margin: 0 3px;
+  padding: 3px;
+}
+
+.main-img{
+  width: 100%;
+  scale: .8;
+}
+
+
+.cv{
+  width: 100%;
+}
+
+.cv-output{
+  display: flex;
+  scale: 1;
+}
+
+.aside{
+  padding: 2rem .5rem;
+  width: 35%;
+}
+
+.aside .image-area{
+  width: 70px;
+  height: 70px;
+  margin: .5rem auto .4rem;
+}
+
+.aside section{
+  margin:1rem 0 1rem;
+}
+
+.aside section h3, .general section h3{
+  margin-bottom: .7rem;
+  font-size: .8rem;
+}
+
+.details-cont{
+  gap: .3rem;
+  margin-bottom: .5rem;
+  scale: .9;
+}
+
+.details-cont .fa{
+  font-size: 11px;
+}
+
+.details{
+  font-size: 12px ;
+  word-break: break-all;
+ }
+
+ .skills-section div li{
+  margin-bottom: .5rem;
+  font-size: 11px;
+  line-height: .8rem;
+ }
+
+.general{
+  padding: 1rem .9rem .9rem 1rem;
+  width: 65%;
+}
+
+.profile-section p, .aside .bio-section p{
+  line-height: 1rem;
+  font-size: 11px;
+}
+
+.general section{
+  margin-bottom: 1.35rem;
+}
+
+.employment-section div, .education-section div{
+  margin-bottom: 1.2rem;
+}
+
+.employment-section div h4, .education-section div h4{
+  font-size: .72rem;
+  margin-bottom: .3rem;
+}
+
+.employment-section div p, .education-section p{
+  font-size: 11px;
+  margin-bottom: .2rem;
+}
+
+.employment-section div i, .education-section i{
+  font-size: 11px;
+}
+
+.employment-section div ul, .education-section div ul{
+  margin: .4rem 0 0 2rem;
+}
+
+.employment-section div ul li{ 
+  font-size: 12px;
+  margin-bottom: .2rem;
+}
+
+.duration{
+  font-size: 11px;
+}
+
+
+
+
+
+}
+
+
+
+@media print{
+  nav, .cv-input, footer, form{
+    display: none;
+  }
+
+  .cv{
+    width: 100%;
+  }
+
+  .cv-output{
+    width: 100%!important;
+    padding: 0!important;
+    margin: 0!important;
+  }
+
+  @page{
+    margin: 0;
+  }
+
 }
