@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jobarcv/static/css/main.0577b299.css",
+    "main.js": "/jobarcv/static/js/main.c8f16c55.js",
+    "static/media/cv2.jpg": "/jobarcv/static/media/cv2.53d68fe87fdcc6797b4c.jpg",
+    "static/media/cv3.jpg": "/jobarcv/static/media/cv3.0d2c931289a1c794507a.jpg",
+    "static/media/cv1.jpg": "/jobarcv/static/media/cv1.2ea2e059dee8a1a036e4.jpg",
+    "static/media/Capture2.PNG": "/jobarcv/static/media/Capture2.2a52beb4e5f69d6acc6e.PNG",
+    "static/media/cv5.PNG": "/jobarcv/static/media/cv5.ef4e34fc156bbf4a91bb.PNG",
+    "static/media/bg3.jpeg": "/jobarcv/static/media/bg3.08ad66f2b47549dae1db.jpeg",
+    "static/media/profile-icon.png": "/jobarcv/static/media/profile-icon.3a53b884d768845f45cf.png",
+    "static/media/crown.webp": "/jobarcv/static/media/crown.c6d35aa5d0ce034a90d4.webp",
+    "static/media/triangle-icon.webp": "/jobarcv/static/media/triangle-icon.9802287e19b1fbc0f1a6.webp",
+    "index.html": "/jobarcv/index.html",
+    "main.0577b299.css.map": "/jobarcv/static/css/main.0577b299.css.map",
+    "main.c8f16c55.js.map": "/jobarcv/static/js/main.c8f16c55.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0577b299.css",
+    "static/js/main.c8f16c55.js"
+  ]
+}
