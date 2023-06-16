@@ -7,7 +7,7 @@ const Navbar = () => {
 
             <div className="ul" data-aos='fade-down' data-aos-duration='700'>
                 <Link to='/' > <li> Home </li>  </Link>
-                <Link to='create'> <li>Create CV </li></Link>
+                <Link to='cvcreate'> <li>Create CV </li></Link>
             </div>
         </nav>
      );

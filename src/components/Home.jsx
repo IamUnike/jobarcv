@@ -21,7 +21,7 @@ const Home = () => {
 
                 <p data-aos='fade-up' data-aos-duration='700'> Just enter your details, and we'll do the rest! </p>
 
-                <Link to='create' >
+                <Link to='cvcreate' >
                     <button className="create-btn" data-aos='fade-up' data-aos-duration='900'> Create CV </button>
                 </Link>
             </div >

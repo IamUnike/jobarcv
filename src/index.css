@@ -208,20 +208,20 @@ button{
 
 
 
-
+/* 
 .cv{
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: 90%;
   margin: 0 auto;
-}
+} */
 
 .cv-input{
   display: block;
   background-color: #ffffff;
   min-height: 100vh;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding: 5rem 2rem 2rem;
   display: flex;
@@ -296,10 +296,16 @@ button{
   background-color: green;
 }
 
-.download, .colorInput{
+.color-btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.colorInput, .download{
   border: 2px solid green;
   border-radius: none;
-  margin: .2rem auto;
   background-color: transparent;
   color: black;
   text-transform: uppercase;
@@ -310,23 +316,6 @@ button{
   border-radius: 7px;
 }
 
-.download{
-  margin: 0 auto 1.3rem;
-  font-weight: 600;
-}
-
-.download:hover{
-  background-color: green;
-  color: white;
-}
-
-.color-btns{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .5rem;
-}
-
 .colorInput{
   text-transform: capitalize;
   font-size: 12px;
@@ -334,8 +323,35 @@ button{
   border: 2px solid green;
 }
 
+.download{
+  margin: 0 auto 1.3rem;
+  font-weight: 600;
+  margin: 1rem auto;
+  display: block;
+}
+
+.download:hover{
+  background-color: green;
+  color: white;
+}
+
+
 .each-input, .each-employment, .each-education{
   margin-bottom: 1rem;
+}
+ a{
+  text-decoration: none;
+ }
+
+.previewBtn{
+  background-color: green;
+  color: white;
+  margin: 1rem auto;
+  display: block;
+}
+
+.previewBtn:hover{
+  text-decoration: underline;
 }
 
 

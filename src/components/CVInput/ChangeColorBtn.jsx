@@ -1,6 +1,6 @@
 const ChangeColorBtn = ({bgColor, setBgColor}) => {
     return ( 
-        <div data-aos='fade-up' data-aos-duration='500'>
+        <div>
             <div>
                 <input id='bgColor' type="color" value={bgColor} onChange={(e) => setBgColor(e.target.value)} style={{display:'none'}}/>
                 <label htmlFor='bgColor'>
@@ -14,7 +14,7 @@ const ChangeColorBtn = ({bgColor, setBgColor}) => {
 
 const ChangeTextColorBtn = ({textColor, setTextColor}) => {
     return ( 
-        <div data-aos='fade-up' data-aos-duration='500'>
+        <div >
             <div>
                 <input id='textColor' type="color" value={textColor} onChange={(e) => setTextColor(e.target.value)} style={{display:'none'}}/>
                 <label htmlFor='textColor'>
@@ -24,6 +24,5 @@ const ChangeTextColorBtn = ({textColor, setTextColor}) => {
         </div>
      );
 }
-
 
 export {ChangeColorBtn, ChangeTextColorBtn} ;

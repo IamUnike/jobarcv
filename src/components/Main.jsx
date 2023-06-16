@@ -233,8 +233,6 @@ const Main = () => {
 
             {/* <ReactToPrint trigger={() => <button className='add'> Download CV </button>} content={() => componentRef.current}  /> */}
             
-            
-            
         </div>
     );
 }
