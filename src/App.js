@@ -214,9 +214,7 @@ function App() {
 
        <Routes>
           <Route path="/" element={ <Home /> } ></Route>
-
           <Route path="cvcreate" element={ <CVInput profileData={profileData} setProfileData={setProfileData} handleInputChange={handleInputChange} photo={photo} setPhoto={setPhoto} employments={employments} setEmployments={setEmployments} addEmployment={addEmployment} removeEmployment={removeEmployment} handleEmploymentChange={handleEmploymentChange} handleRoleChange={handleRoleChange} education={education} setEducation={setEducation} addEducation={addEducation} handleEducationChange={handleEducationChange} removeEducation={removeEducation} skillSetInput={skillSetInput} setSkillSetInput={setSkillSetInput} handleSkillChange={handleSkillChange} addSkill={addSkill} removeSkill={removeSkill} bgColor={bgColor} setBgColor={setBgColor} textColor={textColor} setTextColor={setTextColor}  /> } ></Route>
-
           <Route path="cvcreate/cvoutput" element={ <CVOutput profileData={profileData} setProfileData={setProfileData} handleInputChange={handleInputChange} skillSetOutput={skillSetOutput}  skillSetInput={skillSetInput} handleSkillChange={handleSkillChange} setSkillSetOutput={setSkillSetOutput} removeSkill={removeSkill} photo={photo} bgColor={bgColor} textColor={textColor} employments={employments} education={education} componentRef={componentRef} handlePrint={handlePrint} /> } ></Route>
        </Routes>
       
